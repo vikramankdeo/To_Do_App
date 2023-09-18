@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    /* margin-left: 5%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+  }
+
+  .container {
+    background : linear-gradient(to bottom, #e6f7ff, #f0f0f0);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(200, 173, 173, 0.1);
+    padding: 20px;
+    width: 90%;
+    height: 90vh;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Box shadow */
+  }
+  #checkb {
+    
+    height: 50%;
+    width: 70%;
+    background-color: #f0f0f0; /* Background color for the list */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    margin-left: 15%;
+    /* text-align: left; */
+    overflow-y: scroll;
+
+  }
+  
+  input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-left: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bolder;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .button1 {
+    display: block;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+
+
+  }
+  .button1:hover {
+    background-color: #2980b9;
+  }
+  .button1:active {
+    background-color:  #4400ff;
+  }
+  .button2 {
+    background-color: rgb(213, 119, 119);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #2980b9;
+  }
+ #b1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+ }
+ #todo_area{
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  text-align: left;
+  justify-content: space-between;
+ }
+ #remove_area{
+  /* margin: 5px; */
+  width: 25%;
+  text-align: right;
+  display: inline;
+ }
+ #todo_val {
+  display: inline;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bolder;
+  
+ }
+ #todo_val label{
+  cursor: pointer;
+ }
+#todo_ip{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.remove-button {
+  background-color: #ff6347; /* Red background color */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+/* Hover effect for remove button */
+.remove-button:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+
+
+.checkbox-item {
+  /* margin-bottom: 5px; */
+  padding: 5px;
+  background-color: #ffffff; /* Background color for each item */
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  
+}
+.checkbox-item input[type="checkbox"] {
+  margin-right: 10px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+#heading h1{
+  color: violet;
+  font-size: 35px; /* Font size for the website name */
+  font-weight: bolder;
+ 
+  /* margin-bottom: 5px; */
+}
+#progress{
+display: flex;
+flex-direction: row;
+justify-content: right;
+width: 60%;
+margin-right: 8%;
+}
+#heading_container{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-bottom: -12px;
+}
+#task_left{
+/* background-color: #333; Header background color */
+  color: #d43b3b; /* Text color */
+  /* padding: 5px; */
+/* color: #ff6347; */
+font-size: 30px; /* Font size for the website name */
+width: 35%;
+height: 50%;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+margin-right: 2%;
+}
+#task_left #label{
+background-color: #fef9f6; /* Box background color */
+  color: #333; /* Text color inside the box */
+  border: 2px solid #e1b1b1; /* Border around the box */
+  /* padding: 10px; Add padding for spacing inside the box */
+  text-align: center; /* Center-align text */
+  font-size: 15px;
+  font-weight: bolder;
+}
+#in_progress{
+/* color: #ff6347; */
+/* background-color: #d4c72e; Header background color */
+  color: #0cf323; /* Text color */
+  /* padding: 10px; */
+font-size: 30px; /* Font size for the website name */
+width: 35%;
+height: 50%;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+#in_progress #label{
+background-color:  #fef9f6;/* Box background color */
+  color: #333; /* Text color inside the box */
+  border: 2px solid #0cf323; /* Border around the box */
+  /* padding: 10px; Add padding for spacing inside the box */
+  text-align: center; /* Center-align text */
+  font-size: 15px;
+  font-weight: bolder;
+}

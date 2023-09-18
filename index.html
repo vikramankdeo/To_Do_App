@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To Do</title>
+  <link rel = "stylesheet" href="src/assets/main.css">
+</head>
+<body onload="bodyload()">
+    <div class="container">
+      <div id="heading_container">
+        <div id="heading">
+          <h1>TO DO!</h1>
+        </div>
+        <div id="progress">
+          <div id="in_progress">
+            <div id="in_progress_val">0</div>
+            <div id="label">In Progress</div> 
+          </div>
+          <div id="task_left">
+            <div id="task_left_val">0</div>
+            <div id="label">Task Left</div>
+          </div>
+        </div>
+      </div>
+      <div id="input_task">
+        <input id="in_val" type="text" placeholder="Just Do It...">
+      </div>
+      <div id="b1">
+        <button id="btn1" class="button1" onclick="Add_input()">Add Task</button>
+      </div>
+      <div id="checkb" class="checkbox-list"></div>
+      <div class="button-container">
+        <button id="btn2" class="button2" onclick="removeCheckedCheckboxes()">Remove Task</button>
+      </div>
+    </div>
+
+    <script src ="src/js/main.js"></script>
+
+</body>
+</html>
