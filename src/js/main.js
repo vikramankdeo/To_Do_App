@@ -14,6 +14,7 @@ document.getElementById("task_left_val").innerHTML = completed;
 
 //To store checked item on localstorage so that consistency will be there even after page refresh or closure
 document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById("in_progress_val").innerHTML = 0;
   const storedObject = JSON.parse(localStorage.getItem('list'));
   const storedObject2 = JSON.parse(localStorage.getItem('check_list_dict'));
   
