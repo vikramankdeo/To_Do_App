@@ -7,14 +7,26 @@ let check_list_dict = {};
 let completed = 0;
 let searchBox = document.getElementById("in_val");
 let button_click = document.getElementById("btn1");
-completed = parseInt(localStorage.getItem('completed'));
-counter = parseInt(localStorage.getItem('counter'));
+
+let completed_check = parseInt(localStorage.getItem('completed'));
+if (completed_check>=0){
+  completed = completed_check;
+}
+else{
+  completed = 0;
+}
+let counter_check = parseInt(localStorage.getItem('counter'));
+if (counter_check>=0){
+  counter = counter_check;
+}
+else{
+  counter = 0;
+}
 document.getElementById("task_left_val").innerHTML = completed;
 
 
 //To store checked item on localstorage so that consistency will be there even after page refresh or closure
 document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById("in_progress_val").innerHTML = 0;
   const storedObject = JSON.parse(localStorage.getItem('list'));
   const storedObject2 = JSON.parse(localStorage.getItem('check_list_dict'));
   
